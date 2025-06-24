@@ -96,9 +96,12 @@ const projects = (await getCollection('work'))
 	}
 
 	.hero img {
-		aspect-ratio: 5 / 4;
+		width: 100%;
+		max-width: 280px;
+		height: auto;
+		aspect-ratio: 3 / 4;
 		object-fit: cover;
-		object-position: top;
+		object-position: center top;
 		border-radius: 1.5rem;
 		box-shadow: var(--shadow-md);
 	}
@@ -118,9 +121,12 @@ const projects = (await getCollection('work'))
 		}
 
 		.hero img {
+			width: 100%;
+			max-width: none;
 			aspect-ratio: 3 / 4;
 			border-radius: 4.5rem;
 			object-fit: cover;
+			object-position: center top;
 		}
 	}
 
